@@ -1,0 +1,15 @@
+ <app-navbar></app-navbar>
+<div class="row row-cols-3 mx-1 ">
+    <div style="display: grid; grid-template-columns: auto auto auto auto; width:290px;" class=" my-2 mx-2  " *ngFor="let data of castsDataGet">
+        <div class="card" style="width:18rem;">
+            <img src={{data.profile_path}}
+             class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">{{data.original_name}} </p>
+              
+            </div>
+          </div>
+       
+    </div>
+     
+    </div >
